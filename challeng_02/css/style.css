@@ -1,0 +1,687 @@
+/* Jogo - 4 Desktop */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+/* Light blue/light-blue-100 */
+background: #F3F5FC;
+
+
+/* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 40px;
+top: 40px;
+
+
+
+/* Group 3 */
+
+width: 120px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 120px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 36.67%;
+right: 37.43%;
+top: 0%;
+bottom: 0%;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+
+
+/* Menu */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 10px;
+
+display: none;
+width: 120px;
+height: 176px;
+
+background: rgba(255, 255, 255, 0.24);
+border-radius: 800px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Actions */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 688px;
+height: 67px;
+left: 376px;
+top: 904px;
+
+
+
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 332px;
+height: 67px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Button */
+
+width: 284px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+/* White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 332px;
+height: 67px;
+
+/* Dark blue/dark-blue-300 */
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Button */
+
+width: 284px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+/* Dark blue/dark-blue-300 */
+color: #0A3871;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Keyboard */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 464px;
+height: 152px;
+left: 488px;
+top: 568px;
+
+
+
+/* Word */
+
+width: 464px;
+height: 92px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Letter */
+
+position: absolute;
+width: 80px;
+height: 92px;
+left: 0px;
+top: 0px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 80px;
+height: 4px;
+left: 0px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* A */
+
+position: absolute;
+width: 80px;
+height: 72px;
+left: 0px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 150%;
+/* identical to box height, or 72px */
+text-align: center;
+
+color: #0A3871;
+
+
+
+/* Letter */
+
+position: absolute;
+width: 80px;
+height: 92px;
+left: 96px;
+top: 0px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 80px;
+height: 4px;
+left: 96px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* L */
+
+position: absolute;
+width: 80px;
+height: 72px;
+left: 96px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 150%;
+/* identical to box height, or 72px */
+text-align: center;
+
+color: #0A3871;
+
+
+
+/* Letter */
+
+position: absolute;
+width: 80px;
+height: 92px;
+left: 192px;
+top: 0px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 80px;
+height: 4px;
+left: 192px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* A */
+
+position: absolute;
+width: 80px;
+height: 72px;
+left: 192px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 150%;
+/* identical to box height, or 72px */
+text-align: center;
+
+color: #000000;
+
+opacity: 0;
+
+
+/* Letter */
+
+position: absolute;
+width: 80px;
+height: 92px;
+left: 288px;
+top: 0px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 80px;
+height: 4px;
+left: 288px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* A */
+
+position: absolute;
+width: 80px;
+height: 72px;
+left: 288px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 150%;
+/* identical to box height, or 72px */
+text-align: center;
+
+color: #000000;
+
+opacity: 0;
+
+
+/* Letter */
+
+position: absolute;
+width: 80px;
+height: 92px;
+left: 384px;
+top: 0px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 80px;
+height: 4px;
+left: 384px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* A */
+
+position: absolute;
+width: 80px;
+height: 72px;
+left: 384px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 150%;
+/* identical to box height, or 72px */
+text-align: center;
+
+color: #0A3871;
+
+
+
+/* Other letters */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 136px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* B */
+
+width: 16px;
+height: 36px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+text-align: center;
+
+/* Gray/gray-400 */
+color: #495057;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* J */
+
+width: 14px;
+height: 36px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+text-align: center;
+
+/* Gray/gray-400 */
+color: #495057;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* K */
+
+width: 16px;
+height: 36px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+text-align: center;
+
+/* Gray/gray-400 */
+color: #495057;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* C */
+
+width: 18px;
+height: 36px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+text-align: center;
+
+/* Gray/gray-400 */
+color: #495057;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Group 5 */
+
+position: absolute;
+width: 294px;
+height: 360px;
+left: 573px;
+top: 88px;
+
+
+
+/* Rectangle 14 */
+
+position: absolute;
+width: 294px;
+height: 5px;
+left: 573px;
+top: 443px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* Rectangle 16 */
+
+position: absolute;
+width: 177.75px;
+height: 4.5px;
+left: 653.67px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* Rectangle 15 */
+
+position: absolute;
+width: 4.5px;
+height: 360px;
+left: 653.67px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 4.5px;
+height: 49.5px;
+left: 826.92px;
+top: 88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 4.5px;
+height: 135px;
+left: 826.92px;
+top: 196px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+
+
+/* Rectangle 19 */
+
+position: absolute;
+width: 4.5px;
+height: 72px;
+left: 827.75px;
+top: 327.62px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+transform: rotate(30deg);
+
+
+/* Rectangle 20 */
+
+position: absolute;
+width: 4.5px;
+height: 72px;
+left: 830.52px;
+top: 327.62px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 4.5px;
+height: 72px;
+left: 830.52px;
+top: 194.88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+
+
+/* Rectangle 22 */
+
+position: absolute;
+width: 4.5px;
+height: 72px;
+left: 827.75px;
+top: 194.88px;
+
+/* Dark blue/dark-blue-300 */
+background: #0A3871;
+border-radius: 8px;
+transform: rotate(30deg);
+
+
+/* Ellipse 9 (Stroke) */
+
+position: absolute;
+width: 63px;
+height: 63px;
+left: 797.67px;
+top: 133px;
+
+background: #0A3871;
+ss
