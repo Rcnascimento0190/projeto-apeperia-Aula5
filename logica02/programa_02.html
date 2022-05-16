@@ -1,0 +1,90 @@
+<!--<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+}
+
+desenhaQuadrado(0, 0, 'red');
+desenhaQuadrado(0, 50, 'yellow');
+desenhaQuadrado(0, 100, 'green');
+
+desenhaQuadrado(0, 0, 'red');
+desenhaQuadrado(50, 0, 'yellow');
+desenhaQuadrado(100, 0, 'green');
+
+desenhaQuadrado(100, 0, 'green');
+desenhaQuadrado(100, 50, 'yellow');
+desenhaQuadrado(100, 100, 'red');
+
+desenhaQuadrado(50, 100, 'yellow');
+
+/mas ainda estamos muitas repetições, podemos reduzir e segregar ainda mais o código com while e for./
+
+</script> 
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    var x = 0;
+
+    while(x < 600) {
+
+    desenhaQuadrado(x, 0, 'red');
+    desenhaQuadrado(x, 50, 'yellow');
+    desenhaQuadrado(x, 100, 'green');
+    x = x + 50;
+    }
+
+</script>-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    /*var x = 0;
+
+    while(x < 600) {
+
+    desenhaQuadrado(x, 0, 'green');
+    desenhaQuadrado(x, 50, 'red');
+    desenhaQuadrado(x, 100, 'blue');
+    x = x + 50;
+    }*/
+
+    for(var x = 0; x < 600; x = x + 50) {
+        desenhaQuadrado(x, 0, 'red');
+    }
+
+</script>

@@ -1,0 +1,169 @@
+<meta charset="utf-8">
+<h1>Exercicio:</h1><br><h3> Tente Ajudar Rafaela a pegar Bruna. </h3><br>
+
+Rafaela, estudante de programação, quis fazer uma brincadeira com<br>sua amiga Bruna. Ela criou um programa que, ao ser aberto, exibe 9<br>alertas. Isso fará com que sua amiga clique 1 vez em cada um <br>deles e fique entediada(9 vezes ao todo). Cada alerta é uma mensagem <br>brincando com ela. Contudo, para fazer bonito, ela colocou as 9 <br>instruções dentro de uma função que chamou fazPegadinha:<br><br>
+
+<"meta charset="UTF-8"><br><br>
+
+<"script><br><br>
+    
+    function fazPegadinha() {<br><br>
+        
+        alert("Olá");<br>
+        alert("amiga!");<br>
+        alert("Tá");<br>
+        alert("bastante");<br>
+        alert("entediada?");<br>
+        alert("Em ficar");<br>
+        alert("Clicando em");<br>
+        alert("Ok");<br>
+        alert("né?");<br><br>
+    
+    }<br><br>
+
+
+<"/script><br><br>
+
+	Rafaela, ansiosa para ver a reação de sua amiga Bruna, ao ver oprograma aberto ficou surpresa.<br> Pois, nenhum dos nove alertas foi exibido na tela.<br>Por que a armadilha de Rafaela não funcionou e como você consertaria o código dela para que os 9 alertas fossem exibidos?<br><br>
+
+<h4>Podemos perceber que Rafaela não se atentou a um passo importante que é a chamada da função.<br>
+Quando declaramos uma função todas as instruções dentro dela ficam guardadas e não são executadas. <br>É como se uma função ficasse latente, esperando alguém chamá-la.<br> Este foi o motivo da pegadinha de Rafaela não ter funcionado. <br>Para que a função seja executada precisamos chamá-la:</h4><br><br>
+
+<meta charset="UTF-8">
+
+<'script>
+    
+    function fazPegadinha() {
+        
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+<'/script>
+<h4>Veja, logo após a declaração da função, usamos seu nome fazPegadinha seguido de (). <br>Também utilizamos um ponto e vírgula ao final para indicar o fim da instrução. <br>E se quisermos exibir 18 alertas e tornar a pegadinha de Rafaela ainda mais inconveniente? Basta chamar a função duas vezes:<br><br>
+
+Nessa segunda chamada, a função fazPegadinha é executada pela segunda vez. <br>Sendo assim, lembre-se que a cada chamada de função, as instruções que estão no bloco são executadas do início ao fim.</h4><br><br>
+
+<'meta charset="UTF-8"><br><br>
+
+<'script><br><br>
+
+    function fazPegadinha() {<br><br>
+        alert("Olá");<br>
+        alert("amiga!");<br>
+        alert("Tá");<br>
+        alert("bastante");<br>
+        alert("entediada?");<br>
+        alert("Em ficar");<br>
+        alert("Clicando em");<br>
+        alert("Ok");<br>
+        alert("né?");<br><br>
+    
+    }<br><br>
+
+
+    fazPegadinha();<br>
+    fazPegadinha();<br><br>
+
+<'/script><br><br>
+
+<meta charset="UTF-8">
+<'script>
+    function fazPegadinha() {
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+
+    fazPegadinha();
+    fazPegadinha();
+
+<'/script>
+Quantos anos você tem de diferença do seu irmão?<br><br>
+
+Escreva um programa que exiba a mensagem "Nossa diferença de idade é", concatenando o resultado da subtração da sua idade com a do seu irmão (ou de um amigo). A resposta pode dar negativa, sem dúvida. Não esqueça de usar as funções pulaLinha e mostra e inclusive a tag <meta> para resolver problema de acentuação.<br><br>
+
+Você não precisa submeter a resposta, basta criar o programa, testar e verificar se tudo funciona. Se pintar alguma dúvida, não deixe de postar no fórum!<br><br>
+<meta charset="utf-8">
+
+<script>
+
+	function mostra(frase){
+		document.write(frase);
+	}
+	
+	function pularLinha(){
+		document.write("<br>");
+	}
+
+	var minhaIdade = 18;
+    var idadeIrmao = 15;
+
+    mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao));
+    pulaLinha();
+
+
+</script>
+Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?<br><br>
+
+Vamos criar um programa para resolver a tarefa!<br><br>
+
+Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.<br><br>
+
+Não esqueça de usar o pulaLinha e o mostra.<br><br>
+
+Quebre a cabeça um pouco antes de ver o gabarito! Você não precisa submeter a resposta, basta criar o programa, testar e verificar se tudo funciona. Se pintar alguma dúvida, não deixe de postar no fórum!<br><br>
+
+<meta charset="utf-8">
+
+<script>
+	
+	function pularLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+	}
+
+	var idade_inicial = 1500
+	var idade_final = 2021
+	var idade_media = 28
+
+	mostra("Tivemos " + (idade_final - idade_inicial) / idade_media + "gerações de Brasileiros desde a a chegada dos portugueses.")
+
+</script>
+<br>
+<meta charset="UTF-8">
+
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idadeMediaQuandoTemFilhos = 28;
+        var anoAtual = 2021; 
+
+        var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+        mostra(quantidadeDeGeracoes);
+    
+    </script>

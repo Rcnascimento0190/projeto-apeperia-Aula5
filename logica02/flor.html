@@ -1,0 +1,141 @@
+<!--Temos o seguinte esboço de código que declara a função desenhaCirculo. 
+    Essa função permite desenhar na tela um círculo no eixo X e Y, inclusive permite ainda definir a sua cor:-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2*3.14);
+        pincel.fill();
+    }
+
+    desenhaCirculo(300, 200, 10, 'red');
+    desenhaCirculo(300, 220, 10, 'pink');
+    desenhaCirculo(290, 180, 10, 'green');
+    desenhaCirculo(320, 190, 10, 'yellow');
+    desenhaCirculo(320, 210, 10, 'blue');
+    desenhaCirculo(280, 200, 10, 'purple');
+/* este foi o código feito por mim.  e vamos agoa ver a resolução sugerida. e melhorada. */
+
+</script>
+
+
+
+<!--A função desenhaCirculo ainda não é usada. Faça uso da função para desenhar uma flor conforme a imagem abaixo:
+
+Flor
+
+Utilize como ponto de referência para o centro da flor (círculo vermelho) as coordenadas 300 (x) e 200 (y).-->
+
+
+<!--Temos o seguinte esboço de código que declara a função desenhaCirculo. 
+    Essa função permite desenhar na tela um círculo no eixo X e Y, inclusive permite ainda definir a sua cor:-->
+
+
+
+<!--Uma solução é chamar a desenhaCirculo cinco vezes passando coordenadas e cores diferentes, como no exemplo abaixo:-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2*3.14);
+        pincel.fill();
+    }
+
+    desenhaCirculo(300, 220, 10, 'blue');
+    desenhaCirculo(300, 200, 10, 'red');
+    desenhaCirculo(300, 180, 10, 'yellow');
+
+    desenhaCirculo(280, 200, 10, 'orange');
+    desenhaCirculo(320, 200, 10, 'black');
+
+</script>
+
+<!--É algo que funciona, mas a ideia não é desenharmos uma flor? 
+    Vamos deixar isso claro isolando as cinco chamadas de desenhaCirculo na função desenhaFlor:-->
+
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function desenhaFlor() {
+
+        desenhaCirculo(300, 220, 10, 'blue');
+        desenhaCirculo(300, 200, 10, 'red');
+        desenhaCirculo(300, 180, 10, 'yellow');
+
+        desenhaCirculo(280, 200, 10, 'orange');
+        desenhaCirculo(320, 200, 10, 'black');
+
+    }
+
+    desenhaFlor();
+
+</script>
+<!--Nosso código melhorou, mas pode ficar ainda melhor. Se quisermos agora desenhar a flor mais para a direita? Veja que teremos que mudar os valores passados em desenhaCirculo em vários lugares. Contudo, perceba que o circulo vermelho é o centro da nossa flor e ele está posicionado em 300 (x), 200 (y). Veja que os demais círculos se posicionam 20 pixels do círculo vermelho, tanto acima/abaixo ou direita/esquerda, a distância é sempre a mesma. Sendo assim, podemos indicar a posição x e y de onde o centro da flor será plotado/desenhado e dentro da função ajustar esse valor somando/subtraindo 20 pixels:-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function desenhaFlor(x, y) {
+
+        desenhaCirculo(x, y+20, 10, 'blue');
+        desenhaCirculo(x, y, 10, 'red');
+        desenhaCirculo(x, y-20, 10, 'yellow');
+        desenhaCirculo(x-20, y, 10, 'orange');
+        desenhaCirculo(x+20, y, 10, 'black');
+    }
+
+    desenhaFlor(300, 200);
+
+</script>
+<!--Você pode brincar e passar outras coordenadas para a função desenhaFlor. Inclusive pode desenhar mais de uma flor chamando mais uma vez a função desenhaFlor.-->
+

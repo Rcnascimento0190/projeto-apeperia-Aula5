@@ -1,0 +1,107 @@
+<!--O que achou do exercício que permitia desenhar na tela? A única coisa chata é que só podíamos desenhar na cor azul. Que tal o usuário poder escolher de uma paleta a cor que desejar?
+
+Primeiro, vamos ao código que permite o desenho com o mouse:-->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightblue';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var desenha = false;
+
+    function desenhaCirculo(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(x + ',' + y);
+    }
+
+    tela.onmousemove = desenhaCirculo;
+
+    function habilitaDesenhar() {
+
+        desenha = true;
+    }
+
+    function desabilitaDesenhar() {
+
+        desenha = false;
+    }
+
+    tela.onmousedown = habilitaDesenhar;
+
+    tela.onmouseup = desabilitaDesenhar;
+
+</script>
+
+<!---------------------------------------------------------------Solução Sugerida ------------------------------------------------------------------------>
+
+<!--Assim como obtemos o canvas através de document.querySelector, também obtemos nosso input, que guardaremos na variável paleta. Lembre-se que paleta é o input lá do mundo HTML e para pegarmos o valor de um input precisamos fazer, no caso da nossa variável, paleta.value. Toda vez que alguém alterar a cor lá no mundo HTML, paleta.value automaticamente terá o novo valor. Sendo assim, podemos passar para pincel.fillStyle o valor de paleta.value:-->
+
+<!--Agora, vamos adicionar um input em nossa página logo após o canvas. No mundo HTML, existe o input do tipo color, que ao ser clicado exibe uma paleta de cores para podermos selecionar:-->
+
+<!--Lembra do primeiro módulo como conseguíamos buscar no mundo HTML um input e extrair seu valor? Se conseguirmos fazer isso, podemos usar o valor na propriedade pincel.fillStyle na hora de desenhar o nosso círculo.-->   
+
+<!--A ideia desse exercício é você recordar o módulo anterior e tentar conciliar o que aprendeu neste exercício. Dessa vez, não darei muitas dicas.-->
+
+<canvas width="600" height="400"></canvas>
+<br>
+Escolha uma cor <input type="color"> <!--Tag de palet de cores html decçarada fora do java script e exportada para dentro dele como uma variável  e declarado som seu valor atual para poder funcionara partir da cor escolhida.-->
+
+<script>
+    var cor = document.querySelector('input');   //<------------ variavel input importado do html. 
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'black';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var desenha = false;
+
+    function desenhaCirculo(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = cor.value; //<--------------- sempre pega o valor atual da paleta!
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(x + ',' + y);
+    }
+
+    tela.onmousemove = desenhaCirculo;
+
+    function habilitaDesenhar() { // atribuindo diretamente a função anônima    <--------------------------
+
+        desenha = true;
+    }
+
+    function desabilitaDesenhar() { // atribuindo diretamente a função anônima    <--------------------------
+
+        desenha = false    }
+
+    tela.onmousedown = habilitaDesenhar;
+
+    tela.onmouseup = desabilitaDesenhar;
+
+</script>
+<!--Recarregue a página e experimente clicar no novo elemento que será exibido na página. Automaticamente será exibido uma paleta de cores. Escolha uma cor qualquer. Escolheu? Quando você escolhe uma cor, o input sabe a cor que você guardou e podemos perguntar para ele.
+
+
+
+
+
+
+

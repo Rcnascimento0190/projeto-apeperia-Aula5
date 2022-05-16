@@ -1,0 +1,246 @@
+<meta charset="UTF-8">
+<h2>Utilizando Variaveis</h2>
+<br>
+<script>
+
+    var ano = 2025;
+     document.write("Flávio tem " + (ano - 1977) + " anos");
+     document.write("<br>");
+     document.write("Joaquim tem " + (ano - 1996) + " anos");
+     document.write("<br>");
+     document.write("Barney tem " + (ano - 1976) + " anos");
+     document.write("<br>");
+ </script>
+ <br>
+<br>
+<h3>Vejamos este caso</h3> 
+Amanda esteve muito ocupada e não teve tempo de finalizar um<br> trabalho em grupo. Seus amigos, desesperados, precisam terminar o<br> programa para conseguirem um ponto que pode ajudá-los a passar na<br> matéria. O código era o seguinte:<br>
+<br>
+"meta charset="UTF-8"><br>
+"<"script">"<br>
+    document.write("O resultado da fórmula é : " + n * (10 / 20)  );<br>
+<"/script><br>
+<br>    
+Sabendo que n pode ser qualquer número de 1 a 5 (número que você vai<br> atribuir), o que precisa ser feito para o código funcionar?<br>
+<br>
+OBS: não vale alterar o código e colocar um valor de 1 a 5 no lugar de n! Isso seria zero na certa!<br>
+<br>
+<h4>Precisamos criar uma variavel para n, dando a ele um valor para representar dentro do código.</h4>
+<br>
+<meta charset="UTF-8">
+<script>
+    
+    var n = 5;
+    
+    document.write("O resultado da fórmula é : " + n * (10 / 20)  );
+
+</script><br>
+<br>
+<meta charset="UTF-8">
+<h3>Ajude silvia a entender o que deu errado no codigo dela</h3>
+<br>
+<br>
+Sílvia escreveu o seguinte código:<br>
+ <br>
+"<"meta charset="UTF=8"><br>
+"" <"script><br>
+<br>
+    var minhaIdade = 20;<br>
+<br>
+    document.write("Eu nasci em " + (2016 - minhaidade) );<br>
+<br>
+ "<" /script><br>
+ <br>
+O código de Sílvia não funciona. Qual é o problema?
+<br>
+<br>
+<meta charset="UTF-8">
+<h4>Silvia usou um caractere diferente do declarado na variavel, I e i, os caracteres tem de ser sempre identicos<br>
+ por isso na convensão sugere-se que usemos sempre letras minuscula e nunca começar com numeros.<br>
+ tomei a liberdade de usar um _ underline como separador diferente do código original do exercicio.  minha_idade</h4><br>
+<br>
+<script>
+    var minha_idade=20;
+
+    document.write("Eu nasci em " + (2016 - minhaidade_idade));
+</script><br>
+<br>
+Moacir escreveu o seguinte código que exibe na tela o resultado da tabuada de 5!
+<br>
+<br>
+
+"meta charset="UTF-8"><br>
+<br>
+"script><br>
+<br>
+    document.write("5 vezes 1 é " + 5 * 1+ ""br>");<br>
+    document.write("5 vezes 2 é " + 5 * 2+ ""br>");<br>
+    document.write("5 vezes 3 é " + 5 * 3+ ""br>");<br>
+    document.write("5 vezes 4 é " + 5 * 4+ "'br>");<br>
+    document.write("5 vezes 5 é " + 5 * 5+ ""br>");<br>
+    document.write("5 vezes 6 é " + 5 * 6+ ""br>");<br>
+    document.write("5 vezes 7 é " + 5 * 7+ ""br>");<br>
+    document.write("5 vezes 8 é " + 5 * 8+ ""br>");<br>
+    document.write("5 vezes 9 é " + 5 * 9+ ""br>");<br>
+    document.write("5 vezes 10 é " + 5 * 10+ ""br>");<br>
+     <br>
+"/script><br>
+<br><h3>
+se quisermos a tabuada do 8? Teremos que fazer a alteração de valores em diversos lugares!<br>
+O que podemos fazer para guardar o valor da tabuada que desejamos calcular?</h3>
+<br>
+<meta charset="utf-8">
+<h4>Prsisamos criar a variavel valor para podermos alterarmos apenas o valor da tabuada que desejamos encontrar.<br>
+    Então o codigo vai ficar assim: <br>
+    <br>
+"" <"script><br>
+   <br>
+    var valor_tabuada = 8;<br>
+    <br>
+    document.write("valor_tabuada * 1"<"br>);<br>
+    document.write("valor_tabuada * 2"<"br>);<br>
+    document.write("valor_tabuada * 3"<"br>);<br>
+    document.write("valor_tabuada * 4"<"br>);<br>
+    document.write("valor_tabuada * 5"<"br>);<br>
+    document.write("valor_tabuada * 6"<"br>);<br>
+    document.write("valor_tabuada * 7"<"br>);<br>
+    document.write("valor_tabuada * 8"<"br>);<br>
+    document.write("valor_tabuada * 9"<"br>);<br>
+    document.write("valor_tabuada * 10<"br>);<br>
+ <br>       
+"<"/script><br>
+<meta charset="utf-8">
+<h4>Os valores queas variavel vezes de  a 10 são:</h4><br>
+<br>
+<script>
+
+    var valor_tabuada = 8;
+    document.write(valor_tabuada * 1 + "<br>");
+    document.write(valor_tabuada * 2 + "<br>");
+    document.write(valor_tabuada * 3 + "<br>");
+    document.write(valor_tabuada * 4 + "<br>"); 
+    document.write(valor_tabuada * 5 + "<br>");
+    document.write(valor_tabuada * 6 + "<br>");
+    document.write(valor_tabuada * 6 + "<br>");
+    document.write(valor_tabuada * 8 + "<br>");
+    document.write(valor_tabuada * 9 + "<br>");
+    document.write(valor_tabuada * 10 + "<br>");
+
+</script>
+<br>
+<br>
+ <meta charset="UTF-8">
+
+<script>
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+
+        var idadeFlavio = 39;
+        var idadeJoaquim = 20;
+        var idadeBarney = 41;
+
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+
+        document.write("A média das idades é " + Math.round(media));
+
+        var nome = "Flávio";
+
+        document.write("<br>");
+        document.write("A idade de " + nome + " é " + idadeFlavio);
+
+</script>  
+<br>
+<br><h3>
+O detetive Roy, investigando os arquivos de um hacker, encontrou o seguinte programa:</h3>
+
+<meta charset="UTF-8">
+<script>
+    
+    document.write( (12 + 15 + 13) / 3);
+
+</script>
+<br>
+<br>
+
+Sabemos que o código calcula a média de três números. Mas o que eles significam?<br>
+<br>
+Dias depois, o hacker, que era na verdade um hacker do bem, virou amigo de Roy e durante uma conversa o assunto do código veio à tona. Curioso,<br> 
+Roy perguntou ao hacker o que aqueles números significavam e o hacker disse: ah, o programa calcula a média das idades das minhas filhas.<br>
+Linda tem 12 anos, Guaraciara tem 15 e Pérola tem 13! Roy ficou decepcionado com a resposta,<br>
+pois achou que era algo mais complicado.<br>
+<br>
+Se você pudesse voltar no tempo e reescrever o programa para que o próprio detetive Roy conseguisse entender o programa,<br>
+como você o escreveria? (DICA: faça uso de variáveis para deixar seu código mais claro).<br>
+<br>
+Roy descobriria a intenção do código se ele estivesse declarado da seguinte maneira:<br>
+<br>
+<meta charset="UTF-8">
+<script>
+
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola = 13;
+
+    document.write( (idadeLinda + idadeGuaraciara + idadePerola) / 3);
+</script><br>
+<br>
+<h3>Roy, depois de ter muito contato com a programação, acabou se tornando programador.
+
+O seguinte código o fez refletir bastante:</h3>
+
+<meta charset="UTF-8">
+<script>
+
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola = 13;
+
+    document.write( (idadeLinda + idadeGuaraciara + idadePerola) / 3);
+
+</script>
+
+<h2>
+Ele viu que poderia evitar o uso dos parênteses na instrução que imprime a média das idades se guardasse antes,<br>
+em uma variável, a soma das idades.<br>
+<br>
+Altere o programa e aplique a ideia de Roy! Para isso, use a variável</h2><br>
+<br>
+<h3>
+Alterando o código de Roy temos:</h3>
+<br>
+
+<meta charset="UTF-8">
+
+<script>
+
+    var idadeLinda = 12;
+    var idadeGuaraciara = 15;
+    var idadePerola = 13;
+
+    var totalIdades = idadeLinda + idadeGuaraciara + idadePerola;
+    document.write( totalIdades / 3);
+
+</script>
+
+Por mais que tenhamos acrescentado uma instrução em nosso programa, alterações como essa deixam o código mais legível.<br>
+Veja, não foi necessário colocar os parênteses, pois já temos o total de idades em uma variável.<br>
+<br>
+<br>
+<meta charset="UTF-8">
+<script>
+    var IDADE1 = 10;
+    var IDADE2 = "20";
+    var IDADE3 = 12;
+
+    document.write("A média das idades é <br>");
+    document.write( (IDADE1 + IDADE2 + IDADE3) / 3);
+</script>

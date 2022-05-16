@@ -1,0 +1,131 @@
+<!-- fracao.html-->
+
+<canvas width="700" height="500"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, tamanho, cor) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle=cor;
+        pincel.fillRect(x,y, tamanho, tamanho);
+        pincel.strokeStyle='black';
+        pincel.strokeRect(x,y, tamanho, tamanho);
+    }
+
+    function desenhaTexto(texto, x , y) {
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.font='20px Georgia';
+    pincel.fillStyle='black';
+    pincel.fillText(texto, x, y);    
+}
+
+desenhaTexto("Qual é a fração?", 50, 30);
+
+    desenhaQuadrado(100, 50, 100, 'red');
+    desenhaQuadrado(150, 100, 150, 'yellow');
+    desenhaQuadrado(250, 150, 200, 'green');
+    desenhaQuadrado(350, 200, 250, 'white');
+
+</script>
+
+<!--Ah, não custa nada explicar rapidamente como desenhar um texto. Para tal existe a função fillText, que recebe o texto e as coordenadas onde deve aparecer:
+
+pincel.font='20px Georgia';
+pincel.fillStyle='black';
+pincel.fillText("Qual é a fração?", 50, 30);
+
+Assim até podemos criar uma segunda função para desenhar o texto:-->
+
+<!--function desenhaTexto(texto, x , y) {
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.font='20px Georgia';
+    pincel.fillStyle='black';
+    pincel.fillText(texto, x, y);    
+}
+
+desenhaTexto("Qual é a fração?", 50, 30);
+
+Juntando tudo chegamos a um código muito mais elegante:-->
+
+<!-- fracao.html -->
+
+<meta charset="UTF-8">
+<canvas width="700" height="500"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, tamanho, cor) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle=cor;
+        pincel.fillRect(x,y, tamanho, tamanho);
+        pincel.strokeStyle='black';
+        pincel.strokeRect(x,y, tamanho, tamanho);
+    }
+
+    function desenhaTexto(texto, x , y) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.font='20px Georgia';
+        pincel.fillStyle='black';
+        pincel.fillText(texto, x, y);    
+    }
+
+
+    desenhaTexto("Qual é a fração?", 50, 30);
+
+    var y = 50;
+    desenhaQuadrado(100, 50, 100, 'red');
+    desenhaQuadrado(150, 100, 150, 'yellow');
+    desenhaQuadrado(250, 150, 200, 'green');
+    desenhaQuadrado(350, 200, 250, 'white');
+   /*fração codificada por mim*/ 
+
+</script>
+
+
+ <!--fracao.html -->
+
+<meta charset="UTF-8">
+
+<canvas width="700" height="500"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, tamanho, cor) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle=cor;
+        pincel.fillRect(x,y, tamanho, tamanho);
+        pincel.strokeStyle='black';
+        pincel.strokeRect(x,y, tamanho, tamanho);
+    }
+
+    function desenhaTexto(texto, x , y) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.font='20px Georgia';
+        pincel.fillStyle='black';
+        pincel.fillText(texto, x, y);    
+    }
+
+
+    desenhaTexto("Qual é a fração?", 50, 30);
+
+    var y = 50;
+    desenhaQuadrado(50, y, 100, 'red');
+    desenhaQuadrado(150, y, 100, 'yellow');
+    desenhaQuadrado(250, y, 100, 'green');
+    desenhaQuadrado(350, y, 100, 'white');
+/*fração sugerida pelo professor.*/
+</script>

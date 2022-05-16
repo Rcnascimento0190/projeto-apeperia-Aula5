@@ -1,0 +1,129 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(frase) {
+		document.write(frase);
+        pulaLinha();
+    }
+
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+    var numero = 1;
+
+    var totalIdades = 0;
+
+    while(numero <= totalFamiliares) {
+
+    var idade = parseInt(prompt("Informe idade do familiar"));
+         totalIdades = totalIdades + idade;
+         numero++;  // ´duplo + é o mesmo que  mostra(contador);
+                    //                                contador = contador + 1 //
+     }
+
+    var mediaDasIdades = totalIdades/totalFamiliares
+
+    mostra("A média das idades dos familiares é " + mediaDasIdades);
+    
+    mostra("FIM");
+
+</script>
+
+<!--Karol é organizadora de eventos. Em alguns meses ela é capaz de organizar três eventos e em outros ela organiza cinco. Ou seja, a quantidade de eventos organizados por Karol por mês é variável.
+
+A organizadora de eventos pediu ao seu irmão Kauan, estudante de Ciência da Computação, que criasse um programa no qual ela pode informar o total gasto nos eventos e disso obter uma média das despesas. Essa média ajudará a prever os gastos futuros nos próximos meses.
+
+Kauan criou o programa media_dos_eventos.html e seu código estava assim:-->
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+
+    var contador = 1;
+
+    while(contador <= totalDeEventos) {
+
+        var totalGastoComEventos = 0;
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+        totalGastoComEventos = totalGastoComEventos + gasto;
+        contador++;
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+
+    mostra("A média de gastos é " + media);
+</script>
+
+<!--O problema é que Kauan não construiu o programa corretamente, pois tinha que estudar para a prova de Cálculo 3 na faculdade e acabou cometendo um equívoco. Essa falha resultará no cálculo errado da média.
+
+Qual o problema do código de Kauan? Altere o código para que funcione corretamente deixando sua irmã feliz.
+
+
+Abaixo temos  minha solução de programa corrigido.    A O problema do código é que na nova iteração do loop que pergunta por outros gastos, a variável totalGastoComEventos recebe 0 novamente! Ou seja, criamos uma variável para acumular o gasto do usuário, mas a cada nova pergunta para o usuário, jogamos fora o que já armazenamos e isso não faz sentido.
+
+A solução é inserir a inicialização da variável totalGastoComEventos fora do bloco while(), antes de sua declaração. Da seguinte maneira:
+
+   var totalGastoComEventos = 0;
+
+   while(contador <= totalDeEventos) {
+
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+
+        totalGastoComEventos = totalGastoComEventos + gasto;
+
+        contador++;
+    } -->
+
+
+
+
+<meta charset="UTF-8">
+<script>  
+ //O código final fica assim:// 
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+
+    var contador = 1;
+
+    var totalGastoComEventos = 0; //Agora, a variável totalGastoComEventos é iniciada apenas uma vez e dentro do bloco do while() só acumulamos o gasto lido na variável.// 
+
+    while(contador <= totalDeEventos) {
+
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+
+        totalGastoComEventos = totalGastoComEventos + gasto;
+
+        contador++;
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+
+    mostra("A média de gastos é " + media);
+</script>

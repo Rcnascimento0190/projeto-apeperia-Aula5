@@ -1,0 +1,180 @@
+<meta charset="utf-8">
+A convenção que usaremos para criar nosso programa é adotar letras minúsculas e não usar acentos e, claro, usar a extensão .html.
+<br>
+<br>
+Outro ponto importante é que toda alteração feita no arquivo .html deve ser salva e, além disso, o navegador precisa recarregar a página para que a última alteração do arquivo entre em vigor.
+<br>
+<br>
+<meta charset="UTF-8">
+<h1>Usando JavaScript pela primeira vez</h1>
+<script>
+    alert("Este é um popup em JavaScript");
+</script>
+Gostou?
+<br>
+<br>
+<a>Faremos mais testes de operações, desta vez subtraindo 2016 - 39:
+
+<meta charset="UTF-8">
+
+<script>
+
+    document.write("A idade do Flávio é ");
+    document.write(2016 - 39);
+
+</script>
+Salvaremos o código e recarregaremos a página. Vamos obter o seguinte resultado:
+<br>
+<br>
+A idade do Flávio é 1977
+<br>
+<br>
+Entretanto, este número não representa a idade, e sim o ano de nascimento do Flávio. O programa deve ser coerente, por isso alteraremos a mensagem:
+<br>
+<br>
+<script>
+
+    document.write("Flávio nasceu em")
+    document.write(2016 - 39);
+
+</script>
+Salvaremos, e recarregaremos a página. Desta vez o browser exibe:
+<br>
+<br>
+Flávio nasceu em 1977
+<br>
+<br>
+É preciso ter cuidado, a cada alteração feita deve-se salvar o programa, para depois recarregá-lo no navegador. Pode acontecer de esquecermos de salvar o arquivo, ou de recarregar, e não visualizarmos a versão mais recente.
+<br>
+<br>
+Feito isso, trabalharemos agora com outro tipo de problema para aprofundarmos nosso entendimento. O que acontecerá se incluirmos a operação na mesma frase de Flávio nasceu em?
+<br>
+<br>
+<a>document.write("Flávio nasceu em 2016 - 39")
+Teremos um texto, e a exibição será a seguinte:<a/>
+<br>
+<br>
+Flávio nasceu em 2016 - 39
+<br>
+<br>
+O que acontece se colocarmos a frase em uma string separada da operação numérica?
+<br>
+<br>
+<a>document.write("Flávio nasceu em" + "2016 - 39")
+Ao salvarmos e recarregarmos a página, teremos o mesmo resultado:<a/>
+<br>
+<br>
+Flávio nasceu em 2016 - 39
+<br>
+<br>
+Faremos uma nova operação para descobrirmos as médias entre três idades, para isso, deveremos somá-las e dividir por 3:
+<br>
+<br>
+<a>document.write("A média das idades é");
+document.write(20 + 10 + 30/3);
+Com isso, esperamos que o resultado seja 20. Salvaremos o programa, e recarregaremos a página no navegador. Tivemos o seguinte resultado:</a>
+<br>
+<br>
+A média das idades é 40
+<br>
+<br>
+Este não é o resultado correto, que deveria ser 20.
+<br>
+<br><br>
+A programação, assim como na matemática, prioriza a avaliação das multiplicações e divisões. No caso acima, o JavaScript primeiro realiza a divisão de 30/3, resultando em 10 para, em seguida, somar aos demais 20 + 10 + 10, resultando em 40.
+<br>
+Sendo assim, se quisermos indicar que algo deve ser avaliado primeiro, devemos inseri-lo entre parênteses - sem confundir com os parênteses que seguem o comando write. Antes da operação de divisão, queremos que o programa realize a somatória de 20 + 10 + 30, portanto, é esse trecho que isolaremos:
+<br>
+<br>
+<a>document.write((20 + 10 + 30)/3);
+Salvaremos, e recarregaremos o navegador. Obtivemos o resultado correto:<a/>
+<br>
+<br>
+A média das idades é 20
+<br>
+<br>
+Vamos supor que temos a seguinte situação:
+<br>
+<br>
+<a>.document.write("A soma das idades é" + 20 + 10 + 30);
+Como não há nenhum parênteses que indique prioridade, a leitura será feita normalmente, da esquerda para a direita. Por termos string e números, será feita uma concatenação, assim, o resultado será:</a>
+<br>
+<br>
+A média das idades é 201030
+<br>
+<br>
+Não é este nosso objetivo. Podemos salvar e recarregar a página para confirmar o resultado. Queremos que a operação de soma seja realizada primeiro, assim, recorreremos aos parênteses:
+<br>
+<br>
+<a>document.write("A soma das idades é" + (20 + 10 + 30));
+Lembrando que devemos sempre ter o mesmo número de parênteses de um lado e de outro. Salvaremos e retornaremos ao navegador. Obtivemos o seguinte resultado:</a>A.
+<br>
+<br>
+A soma das idades é 60
+<br>
+<br>
+Se quisermos calcular a média, manteremos a soma como está, e acrescentaremos a divisão por três (/3):
+<br>
+<br>
+<a>document.write("A soma das idades é" + (20 + 10 + 30)/3);
+A operação que está entre parênteses será considerada primeiro. Em seguida, ele fará a divisão, e o resultado disso será concatenado com a frase A soma das idades é. Teremos como resultado final, portanto:</a>
+<br>
+<br>
+A soma das idades é 20
+<br>
+<br>
+Trabalharemos a seguir com a operação:
+<br>
+<br>
+<a>document.write("Flávio nasceu em" + 2016 - 39);
+Em seguida, isolaremos a operação matemática entre parênteses:</a>
+<br>
+<br>
+<a>document.write("Flávio nasceu em" + (2016 - 39));
+Dessa forma, primeiramente, será calculado o resultado de 2016 - 39, para então seguir às demais informações. Inseriremos mais um comando, indicando a idade de Joaquim:</a>
+<br>
+<br>
+<a>document.write("Flávio nasceu em" + (2016 - 39));
+document.write("Joaquim nasceu em" + (2016 - 20));
+E outro, com a idade de Barney:</a>
+<br>
+<br>
+<a>document.write("Flávio nasceu em" + (2016 - 39));
+document.write("Joaquim nasceu em" + (2016 - 20));
+document.write("Barney nasceu em" + (2016 - 40));COPIAR CÓDIGO
+O resultado esperado é o ano de nascimento de cada um, resultado das respectivas subtrações. Salvaremos o programa, retornaremos ao navegador e recarregaremos a página. Obtivemos o seguinte resultado:</a>
+<br>
+<br>
+Flávio nasceu em 1977Joaquim nasceu em 1996Barney nasceu em 1976
+Os valores estão corretos, entretanto, faremos com que sejam exibidos separadamente por linha. Para isso, podemos concatenar um <br>:
+<br>
+<br>
+<a>document.write("Flávio nasceu em" + (2016 - 39) + "<br>");<br>
+document.write("Joaquim nasceu em" + (2016 - 20) + "<br>");<br>
+document.write("Barney nasceu em" + (2016 - 40) + "<br>");<br>
+A primeira coisa que o JavaScript fará é identificar a presença de parênteses, que indiquem uma operação a ser priorizada. No caso, temos as subtrações referentes aos anos de nascimento.</a>
+<br>
+<br>
+Feito isso, a análise ocorrerá normalmente, da esquerda para a direita. Como temos texto e número, haverá a concatenação destes, resultando na frase Flavio nasceu em 1977, por exemplo. Por fim, será concatenado o <br>, já que o comando está inserido no código HTML, resultando na quebra de linha entre uma frase e a seguinte.
+c
+Salvaremos o programa, retornaremos ao navegador e carregaremos a página, com o seguinte resultado:
+<br>
+<br><br>
+Flávio nasceu em 1977
+Joaquim nasceu em 1996
+Barney nasceu em 1976
+Alternativamente, podemos obter o mesmo resultado escrevendo o código da seguinte forma:
+<br>
+<br>
+<a>document.write("Flávio nasceu em " + (2016 - 39));<br>
+document.write("Joaquim nasceu em " + (2016 - 20));<br>
+document.write("Barney nasceu em " + (2016 - 40));<a/>
+<br>
+<br>
+<script>
+document.write("Flávio nasceu em" + (2016 - 39));
+document.write("<br>");
+document.write("Joaquim nasceu em " + (2016 - 20));
+document.write("<br>");
+document.write("Barney nasceu em " + (2016 - 40));
+document.write("<br>");</script>

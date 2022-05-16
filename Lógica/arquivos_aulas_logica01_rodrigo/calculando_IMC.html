@@ -1,0 +1,145 @@
+	<meta charset="utf-8"></meter>
+
+	<h1> Calculando IMC </h1><br>
+
+	<h3> Sabendo que; segundo a organização mundial da saúde, para calcular o IMC precisamos de</h3> <h4>peso / por altura * altura</h4><h3> e vamos utilzar a estrutura miníma com as variáveis e funções</h3><br><br> 
+
+
+	<meta charset="utf-8">
+
+	<script> 
+
+		function pularlinha() {
+			document.write("<br>");
+		}
+		
+		function mostra(frase) {
+			document.write(frase);
+			pularlinha();
+		}
+
+		function calcula_imc(peso, altura) {
+			var imc = peso /  (altura * altura);
+			mostra(" O IMC calculadado é de: " + imc)
+		}
+
+		calcula_imc(78, 1.79);
+		
+		
+	</script><br><br>
+
+	<!--vamos ir além e dar mais parâmetros para nossa função.-->
+
+	<meta charset="utf-8">
+
+	<script> 
+
+		function pularlinha() {
+			document.write("<br>");
+		}
+		
+		function mostra(frase) {
+			document.write(frase);
+			pularlinha();
+		}
+
+		function calcula_imc(peso, altura) {
+			var imc = peso /  (altura * altura);
+			return imc;
+		}
+
+		var imc_Rodrigo = calcula_imc(78, 1.78);
+		var imc_Alex = calcula_imc(76, 1.78);
+
+		mostra(imc_Rodrigo);
+		mostra(imc_Alex);
+		
+	'// podemos observar a troca de mostra pela cláusula return uma variável que nos permite ser mais dinâmicos dentro da intenção do código. //'
+
+	</script><br><br>
+
+	<!-- Transição e vvaaaariáveis auxiliares -->
+
+
+	<meta charset="utf-8">
+
+	<script> 
+
+		function pularlinha() {
+			document.write("<br>");
+		}
+		
+		function mostra(frase) {
+			document.write(frase);
+			pularlinha();
+		}
+
+		function calcula_imc(peso, altura) {
+			var imc = peso /  (altura * altura);
+			return imc;
+		}
+
+		var imc_Rodrigo = calcula_imc(78, 1.78);
+		var imc_Alex = calcula_imc(76, 1.78);
+		var total_imc = imc_Alex + imc_Rodrigo;
+
+		document.write("A soma dos imc's é " + total_imc);
+		
+	'// Variáveis auxiliares,  eu acredito que deixe mais léggivel o ccódigo principalmente parraiiniciantes como eu que precisam viisualizar o que está acontecendo no código. //'
+
+	</script><br><br>
+
+	<!-- Vamos innteragir com o usuário --> 
+
+	<meta charset="utf-8">
+
+	<script> 
+
+	'//Para interagir com undo externo o java tem uma função chamada PROMPT - prompt -que recebe a informação desejada e digitada pelo usuário, e retorna um ma pop-up com a informação de entrada do usuário e/ou que queremos que ele veja no pop-up//'
+
+	function pularlinha() {
+			document.write("<br>");
+		}
+		
+		function mostra(frase) {
+			document.write(frase);
+			pularlinha();
+		}
+
+		function calcula_imc(peso, altura) {
+			
+			return peso / (altura * altura);
+		}
+
+		var nome = prompt(" Ola! Digite seu nome:");
+		var peso_informado = prompt(nome + " agora digite o seu peso:");
+		var altura_informada =  prompt(nome + " quase lá, falta apenas digitar o sua altura");
+
+		var imc = calcula_imc(peso_informado, altura_informada);
+		document.write(nome + " O seu IMC calculado é : " + imc + "<br>");
+
+		
+	'// Variáveis auxiliares,  eu acredito que deixe mais léggivel o ccódigo principalmente parraiiniciantes como eu que precisam viisualizar o que está acontecendo no código. //'
+
+	    if (imc < 18.5) {
+
+	        mostra(nome +  " o seu IMC é " + imc +  " Você está abaixo do recomendado pela organização mundial da saúde");
+	     } 
+
+	    if (imc > 35) {
+
+	        mostra(nome + "<br>" + " o seu IMC é " + imc +  " Você está acima do recomendado pela organização mundial da saúde");
+	     } 
+
+	    if (imc == 18.5) {
+
+	        mostra(nome + " o seu IMC é " + imc +  " Você está com imc excelente do recomendado pela organização mundial da saúde");
+	     } 
+
+	    if (imc >= 18.5 && imc <= 35) {
+
+	        mostra(nome +  " o seu IMC é " + imc +  " Você está com imc excelente, dentro dos padrões recomendados pela organização mundial da saúde");
+
+	    }
+
+	</script><br><br>

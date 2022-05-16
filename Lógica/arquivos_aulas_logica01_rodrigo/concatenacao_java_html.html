@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<h3>Fugêncio escreveu o seguinte código:</h3>
+
+
+"<"meta charset="UTF-8">""
+<br>
+<br>
+"<"script><br>
+    document.write("Flávio nasceu em " + (2016 - 39));<br>
+    document.write("<"br">");<br>
+    document.write("Joaquim nasceu em " + (2016 - 20));<br>
+    document.write("<"br">");<br>
+    document.write("Barney nasceu em " + (2016 - 40));<br>
+"<"/script">"
+<br>
+<br>
+Flávio nasceu em 1977<br>
+Joaquim nasceu em 1996<br>
+Barney nasceu em 1976<br>
+<br>
+<br>
+<br>
+É um código completamente funcional, mas sua namorada Rita, após lê-lo, achou melhor concatenar a string "<"br">" com o texto passado para document.write. Segundo Rita, isso evitará as duas instruções document.write("<"br">") do programa, deixando-o mais enxuto.
+<br>
+<br>
+Apesar de Fugêncio preferir a forma atual, pois nela é mais visível e claro o pulo de linha, ele não desapontará sua namorada.
+<br>
+<br>
+Altere o código conforme as instruções de Rita para que continue com o mesmo resultado, mas sem a necessidade de chamar document.write("<"br">") duas vezes.<br>
+Crie um novo arquivo HTML e faça a alteração.
+<br>
+<br>
+<h3>Código sugerido pela namorada de Fugêncio</h3>
+"<"meta charset="utf-8">""
+<br>
+<br>
+"<"script><br>
+    var ano = 2016;<br>
+    document.write("Flávio nasceu em " + (2016 - 39) + "<"br>");<br>
+    document.write("Joaquim nasceu em " + (2016 - 20) + "<"br>");<br>
+    document.write("Barney nasceu em " + (2016 - 40));<br>
+"<"/script">""
+<br>
+<br>
+Flávio nasceu em 1977<br>
+Joaquim nasceu em 1996<br>
+Barney nasceu em 1976
+<meta charset="UTF-8">
+<h4>Como se pôde ver, o resultado não muda. Porém é sugerido pela convenção, deixar os codigos sempre o mais enxuto e legível possível para facilitar compreensão e depuração de outros desenvolvedores.</h4>
+<br>
+<script>
+    var ano = 2016;     
+    document.write("Flávio nasceu em " + (ano - 39) + "<br>");
+    document.write("Joaquim nasceu em " + (ano - 20) + "<br>");
+    document.write("Barney nasceu em " + (ano - 40));
+</script>

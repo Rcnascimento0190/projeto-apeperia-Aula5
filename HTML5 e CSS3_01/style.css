@@ -1,0 +1,72 @@
+head {
+	font-size: 30px;
+	text-align: center;
+}
+body {
+	background: black;
+}
+.titulo {
+	font-size: 25px;
+	color: antiquewhite;
+	text-align: center;
+}
+#bunner {
+	width: 100%;
+	height: 400px;
+}
+#cabeca {
+	font-size: 25px;
+	color: antiquewhite;
+	text-align: center;
+}
+.estrutura {
+	font-size: 20px;
+	color: black;
+	text-align: center; 
+	border-radius: 20px;
+}
+#corpo {
+	background-color: red;"
+	border-radius: 20px;
+}
+#missao {
+	background-color: yellow;">
+	border-radius: 20px;
+}
+#beneficios {
+	background-color: green;"
+	border-radius: 20px;
+}
+.vantagens {
+	border-width: 10px;
+	margin-left: 10px;
+	font-size: 20px;
+	color: antiquewhite;
+}
+ul {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	margin-left: 0%;
+}
+#imagem2 {
+	margin-left: 250%;
+	width: 100%;
+}
+#logo {
+	width: 80%;
+	margin-left: 0px;
+	margin-top: 300px;
+	border-radius: 20px;
+	border-image: 100px;
+}
+.rodape {
+	font-size: 15px;
+	width: 80%;
+	color: yellow;
+	text-align: center;
+	margin-left:00%;
+	margin-top: 0%;
+	border-width: 0%;
+
+}

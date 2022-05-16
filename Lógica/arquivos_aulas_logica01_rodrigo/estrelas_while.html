@@ -1,0 +1,27 @@
+<h2>Estrelas</h2>
+
+<!--Salvaremos e recarregaremos a página. Como vemos, temos 10 asteriscos em cada linha, sendo que há 3 linhas. Mas será que temos 10 asteriscos mesmo? Ao observarmos atentamente, veremos que cada linha conta apenas com 9 asteriscos, não 10. Isso ocorre pois quando construímos as colunas, colocamos apenas que a coluna < 10, quando na verdade deveria ser coluna <= 10:-->
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    for(var linha = 1; linha <= 3; linha++) {
+
+        for(var coluna = 1; coluna <= 10; coluna++) {
+            document.write("*");
+        }
+        pulaLinha();
+    }
+
+</script>
+<!--Isso é um erro comum, que pode ocorrer quando trabalhamos com loops. Salvaremos o programa e recarregaremos a página, e o resultado será:-->

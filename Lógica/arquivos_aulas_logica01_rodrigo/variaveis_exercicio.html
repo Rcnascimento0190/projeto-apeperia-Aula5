@@ -1,0 +1,33 @@
+<h1>Variaveis, exercicio!</h1><br>
+<meta charset="UTF-8">
+Chegou a hora de você enfrentar um exercício mais complexo, não?<br> Não se preocupe, ele utiliza tudo o que você aprendeu até agora,<br> a grande questão é a interpretação do que deve ser feito. <br>Você não precisa dar uma resposta aqui, apenas faça o código e teste ele.<br> Ao clicar em continuar, verá a resposta do instrutor, mas antes de fazer isso, <br>tente resolver o problema sozinho. Vamos ao exercício?<br>
+<br>
+1 - Crie um novo arquivo, chame-o de calcula_consumo.html e <br>armazene-o dentro da pasta logica. Não esqueça da estrutura mínima<br>que devemos ter para cada um dos novos programas.<br>
+<br>
+2 - No mundo HTML adicione um título com o seguinte conteúdo: <h4>Álcool ou Gasolina?</h4>. Salve o programa e abra-o no navegador.<br>
+<br>
+3 - Problema: Seu carro tem um tanque de 40 litros. Com gasolina e<br> usando todo o tanque você fez um caminho Com Gasolina de 480 quilômetros. <br> Qual é o consumo De Gasolina? Para calculá-lo, divida a <br>distância percorrida pela quantidade de litros gastos. Imprima o <br>valor utilizando document.write. Organize as contas em variáveis.<br>
+<br>
+4 - Com álcool, um tanque de 40 litros fez um caminhoComAlcool de <br>300 quilômetros. Qual é o consumoDeAlcool?<br>
+<br>
+No mundo da programação, faz parte do papel de um programador <br>entender um problema e materializar sua solução em código.<br>
+<br>
+<br>
+<h1>Reslução</h1> <br><h3>Gasolina ou Álcool:</h1><br>
+	
+	<meta charset="utf-8">
+
+	<script> 
+
+		var quantidade_tanque = 40;
+
+		var caminho_com_gasolina = 480;
+		var caminho_com_alcool = 300;
+		
+		var litros_por_km_gasolina = caminho_com_gasolina / quantidade_tanque;
+		var litros_por_km_alcool = caminho_com_alcool / quantidade_tanque;
+
+		document.write("Meu carro tem uma autonomia em consumo de gasolina de  " + litros_por_km_gasolina  + " litros por km <br>");
+		document.write("Meu carro tem uma autonomia em consumo de alcool de  " + litros_por_km_alcool + " litros por km <br>");
+
+   </script>

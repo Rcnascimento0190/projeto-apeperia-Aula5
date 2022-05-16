@@ -1,0 +1,52 @@
+<h1> How Convert strings to numbers with parseInt</h1>
+<br>
+<h3> Interagindo com usuário utilizando prompt. </h3> 
+<br>
+
+<meta charset="utf-8">
+
+<script> 
+
+	'//Lembrando que prompt le tudas entradas como string, então precisamos fazer a conversão de uma representação numérica como string, para numeros.//'
+	
+	function pulaLinha () {
+		document.write("<br>")
+		document.write("<br>");
+	}
+
+	function mostra (frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var nome = prompt("Olá, digite seeu nome: ");
+
+	var vitorias = parseInt(prompt("Digite a quantidade de vitórias: "));
+
+	var empates  = parseInt(prompt("Enntre  com a quantidade de empates"));
+
+	var total_pontos = (vitorias * 3 + empates * 1);
+
+	var pontos_ano_anterior = parseInt(prompt("Digite a quantidade de Pontos feitos no ano passado e veja se seu time melhorou: "))
+
+	mostra(nome + "," +  "<br>" + "Seu time fez " + total_pontos + " pontos este ano e " + pontos_ano_anterior + " no ano anterior");
+
+	if (total_pontos < pontos_ano_anterior) {
+
+		mostra(nome + "," +  "<br>" + "Seu time fez apenas " + total_pontos + " pontos este ano e está pior em realção ao ano passado!");
+	}
+
+	if (total_pontos > pontos_ano_anterior) {
+
+		mostra(nome + "," +  "<br>" + "Seu time fez " + total_pontos + " pontos este ano e está melhor em realção ao ano passado!");
+	}
+
+	if (total_pontos == pontos_ano_anterior) {
+
+		mostra(nome + "," +  "<br>" + "Seu time fez " + total_pontos + " pontos este ano e está igual em realção ao ano passado!");
+	}
+
+
+</script>
+<br>
+
